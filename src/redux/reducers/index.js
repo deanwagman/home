@@ -1,4 +1,9 @@
 import { combineReducers } from "redux";
-import CounterReducer from "./counter";
 
-export default combineReducers({ counter: CounterReducer });
+import CounterReducer from "./counter";
+import ListReducer from "./list";
+
+export default combineReducers({
+  counter: CounterReducer,
+  lists: ListReducer,
+});

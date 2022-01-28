@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+
 import increase from "../redux/actions/counter/increase";
 
 const Counter = ({ counters, increase }) => {
