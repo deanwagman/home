@@ -1,22 +1,20 @@
 import { connect } from "react-redux";
 
 import Main from "./components/layout/Main";
-import Counter from "./components/Counter";
+import Counters from "./components/Counters";
 import Lists from "./components/Lists";
 
 import "./App.css";
 
-const App = ({ value }) => {
+const App = ({ counters }) => {
   return (
     <Main>
-      <Counter />
+      <Counters />
       <Lists />
     </Main>
   );
 };
 
-const mapStateToProps = (state) => ({
-  value: state.test,
-});
+const mapStateToProps = (state) => state;
 
 export default connect(mapStateToProps, null)(App);

@@ -1,7 +1,7 @@
 import { COUNTER__INCREASE_COUNTER } from "../../dictionary";
-
 const initialState = {
   DEV: 0,
+  "Practice Spanish": 0,
 };
 
 export default (state = initialState, action) => {
